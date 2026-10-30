@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Маша — дизайнер интерьеров. Создаю гармоничные, уютные и функциональные пространства с вниманием к деталям.">
+    <title>Маша — дизайнер интерьеров</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="hero-shell" id="home">
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="#home" aria-label="На главную">
+                    <img src="logo.png" alt="MARIA.K — дизайнер интерьеров">
+                </a>
+
+                <nav class="main-nav" aria-label="Основное меню">
+                    <a class="nav-item nav-item-active" href="#home">Главная</a>
+                    <span class="nav-item nav-disabled" aria-disabled="true" title="Раздел пока не добавлен">Обо мне</span>
+                    <a class="nav-item" href="#services">Услуги</a>
+                    <span class="nav-item nav-disabled" aria-disabled="true" title="Раздел пока не добавлен">Проекты</span>
+                    <a class="nav-item" href="#question">Задать вопрос</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="intro page-container" aria-labelledby="intro-title">
+                <div class="intro-content">
+                    <h1 id="intro-title">Привет! Я Маша<span class="profession">Дизайнер интерьеров</span></h1>
+                    <h2 class="intro-quote">
+    «Дом, в который приятно возвращаться»
+</h2>
+                    <p class="intro-description">Помогаю создать цельное пространство — от продуманной планировки до выбора материалов, оттенков и освещения. Учитываю привычки и пожелания человека, чтобы интерьер оставался красивым, удобным и отражал характер владельца</p>
+                    <a class="contact-link" href="#contacts">Связаться со мной <span aria-hidden="true">↗</span></a>
+
+                </div>
+
+                <div class="intro-photo">
+                    <div class="photo-frame">
+                        <img src="portrait.webp" alt="Портрет Маши — дизайнера интерьеров" width="1086" height="1448" fetchpriority="high">
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-section" id="services" aria-labelledby="services-title">
+                <div class="page-container services-layout">
+                    <div class="section-intro">
+                       
+                        <h2 id="services-title">Что я делаю<span class="title-period"></span></h2>
+                        <p>Подбираю решения, которые делают интерьер красивым, спокойным и удобным для повседневной жизни.</p>
+                    </div>
+
+                    <div class="services-grid">
+                        <article class="service-card">
+                            <h3>Планировочные решения</h3>
+                            <p>Продумываю расположение зон, мебели и проходов, чтобы пространство было логичным и комфортным.</p>
+                        </article>
+                        <article class="service-card">
+                            <h3>Дизайн-концепция</h3>
+                            <p>Подбираю стиль, цветовую палитру, материалы и общее настроение интерьера.</p>
+                        </article>
+                        <article class="service-card">
+                            <h3>Подбор мебели и света</h3>
+                            <p>Помогаю выбрать мебель, освещение и детали, которые поддерживают общую идею пространства.</p>
+                        </article>
+                        <article class="service-card">
+                            <h3>Консультация</h3>
+                            <p>Отвечаю на вопросы и помогаю определиться с решениями для оформления или обновления интерьера.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="question-section" id="question" aria-labelledby="question-title">
+                <div class="page-container question-layout">
+                    <div class="question-copy">
+                       
+                        <h2 id="question-title">Задать вопрос</h2>
+                        <p>Есть идея для вашего пространства? Расскажите, что вы задумали, или задайте интересующий вопрос.</p>
+                    </div>
+
+                    <form class="question-form" aria-label="Форма обратной связи">
+                        <label for="visitor-name">Ваше имя</label>
+                        <input id="visitor-name" name="name" type="text" placeholder="Как к вам обращаться?" autocomplete="name">
+
+                        <label for="visitor-email">Электронная почта</label>
+                        <input id="visitor-email" name="email" type="email" placeholder="example@gmail.com" autocomplete="email">
+
+                        <label for="visitor-message">Ваш вопрос</label>
+                        <textarea id="visitor-message" name="message" rows="4" placeholder="Напишите, что вас интересует..."></textarea>
+
+                        <button class="send-button" type="button" disabled>Отправить сообщение <span aria-hidden="true">↗</span></button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="page-container footer-main">
+                <div class="footer-brand-block">
+                    <img class="footer-logo" src="logo_footer.png" alt="MARIA.K — дизайнер интерьеров">
+                    <p class="footer-description">Дизайн интерьеров с вниманием к деталям, атмосфере и вашему образу жизни.</p>
+                    <div class="footer-accent" aria-hidden="true"></div>
+                </div>
+
+                <div class="footer-contacts" id="contacts" aria-label="Контакты Маши">
+                    <h3>Контакты<span class="footer-title-dot"></span></h3>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-row">
+                            <span class="footer-contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                            </span>
+                            <span class="footer-contact-info"><span class="footer-contact-label">Instagram</span><span class="footer-contact-value">_maria.k07_</span></span>
+                        </li>
+                        <li class="footer-contact-row">
+                            <span class="footer-contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M21 3 3.5 10.5l6.6 2.6L13 20l2.7-5.4L21 3Z"/><path d="m10.1 13.1 10.9-10"/></svg>
+                            </span>
+                            <span class="footer-contact-info"><span class="footer-contact-label">Telegram</span><span class="footer-contact-value">@kokhanyashka</span></span>
+                        </li>
+                        <li class="footer-contact-row">
+                            <span class="footer-contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+                            </span>
+                            <span class="footer-contact-info"><span class="footer-contact-label">Электронная почта</span><span class="footer-contact-value">mariakohan13@gmail.com</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-container footer-bottom">
+                <small>© 2026 MARIA.K. Все права защищены.</small>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // Подсвечиваем активный раздел в меню при прокрутке страницы.
+        const sectionLinks = document.querySelectorAll('.main-nav a.nav-item');
+        function updateActiveNavigation() {
+            let current = 'home';
+            for (const id of ['services', 'question']) {
+                const section = document.getElementById(id);
+                if (section && section.getBoundingClientRect().top <= 160) {
+                    current = id;
+                }
+            }
+            sectionLinks.forEach(link => {
+                const active = link.getAttribute('href') === '#' + current;
+                link.classList.toggle('nav-item-active', active);
+                if (active) link.setAttribute('aria-current', 'location');
+                else link.removeAttribute('aria-current');
+            });
+        }
+        window.addEventListener('scroll', updateActiveNavigation, {passive: true});
+        window.addEventListener('load', updateActiveNavigation);
+    </script>
+</body>
+</html>
